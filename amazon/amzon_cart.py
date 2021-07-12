@@ -55,7 +55,8 @@ windows_before=driver.window_handles[0]
 "scrolling for specific location"
 driver.execute_script("window.scrollBy(1000,1400)","")
 time.sleep(3)
-driver.find_element_by_xpath("//div[@class='s-result-item s-asin sg-col-0-of-12 sg-col-16-of-20 sg-col sg-col-12-of-16']//span[@class='a-size-medium a-color-base a-text-normal'][normalize-space()='New Apple iPhone 11 (64GB) - Black']").click()
+select_phone=driver.find_element_by_xpath("//span[normalize-space()='New Apple iPhone 12 (128GB) - Purple']")
+select_phone.click()
 time.sleep(3)
 
 
